@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  --bg-body: #19a2ae;
+  --bg-card: #ffffff;
+  --color-primary-1: #2d3248;
+  --color-primary-2: #6a6f81;
+  --color-primary-3: #969696;
+}
+
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-body);
+  font-family: 'Kumbh Sans', sans-serif;
+  overflow: hidden;
+  font-size: 18px;
+}
+
+.bg-image {
+  position: absolute;
+}
+
+.bg-image--top {
+  top: -400px;
+  left: -100px;
+}
+
+.bg-image--bottom {
+  bottom: -450px;
+  right: -100px;
+}
+
+.card {
+  position: relative;
+  top: 30vh;
+  width: 400px;
+  height: 450px;
+  margin: auto;
+  background-color: var(--bg-card);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card__header {
+  position: relative;
+  height: 120px;
+  text-align: center;
+}
+
+.card__header-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.card__header-profile {
+  position: absolute;
+  top: 90px;
+  left: 150px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  background-color: #fff;
+}
+
+.card__body {
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  border-bottom: 2px solid rgb(0 0 0 / .1);
+}
+
+.card__text {
+  margin: 0;
+  margin-bottom: .5em;
+
+}
+
+.card__text-victor {
+  color: var(--color-primary-1);
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.card__text-victor span {
+  font-weight: initial;
+}
+
+.card__text--light {
+  color: var(--color-primary-3);
+}
+
+.card__footer {
+  position: absolute;
+  bottom: 35px;
+  width: 100%;
+  text-align: center;
+}
+
+.card__footer .card__text {
+  font-size: .7em;
+}
+
+
+.card__stats {
+  display: inline-block;
+  margin: 0 .5em;
+  width: 100px;
+  text-align: center;
+}
+
+.card__number {
+  margin-bottom: .5em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary-1);
+}
+
+@media screen and (max-width: 476px) {
+  .bg-image--top {
+    top: -481px;
+    left: -734px;
+  }
+
+  .bg-image--bottom {
+    bottom: -520px;
+    right: -693px;
+  }
+
+  .card {
+    width: 319px;
+  }
+
+  .card {
+    height: 406px;
+  }
+
+  .card__header-profile {
+    left: 108px;
+  }
+
+  .card__body {
+    border-bottom: initial;
+  }
+
+  .card__stats {
+    margin: initial;
+  }
+
+  .card__footer {
+    bottom: 30px;
+    border-top: 2px solid rgb(0 0 0 / .1);
+  }
+
+  .card__number {
+    font-size: 1.0rem;
+  }
+}
